@@ -30,10 +30,10 @@ export function CoffesCard() {
       <span className="text-sm text-base-label text-center pb-8">
       O tradicional café feito com água quente e grãos moídos
       </span>
-      <div className="flex gap-6">
+      <div className="flex gap-6 items-center">
         <div>
-            <span>R$</span>
-            <span>9,90</span>
+            <span className="text-base-text">R$            </span>
+            <span className={`${inter.className} base-text font-bold text-2xl`}>9,90</span>
         </div>
         <div className="flex gap-2">
           <div className="flex items-center space-x-2">
