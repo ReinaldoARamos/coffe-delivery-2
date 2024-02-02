@@ -16,8 +16,22 @@ export default function Home() {
         Nossos cafés
       </h2>
      
-      <div className="">
+      <div className="grid grid-cols-4 gap-x-8 gap-y-10">
         <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+        <CoffesCard />
+
       </div>
 
      
