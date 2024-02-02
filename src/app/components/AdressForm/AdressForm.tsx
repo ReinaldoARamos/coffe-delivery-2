@@ -11,7 +11,7 @@ export function AdressForm() {
         Complete seu pedido
       </div>
 
-      <div className="bg-base-card p-10">
+      <div className="bg-base-card rounded-[6px] p-10">
         <div className="flex gap-2 pb-8">
           <MapPin size={22} className="text-brandyellow-dark" />
           <div className="flex flex-col ">
