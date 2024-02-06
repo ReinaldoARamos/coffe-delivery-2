@@ -19,7 +19,7 @@ const config: Config = {
           300: '#996DFF',
           500: '#8257e6',
           purple: '#8047F8',
-          600: '#4B2995'
+          600: '#4B2995',
         },
         brandyellow :{
             dark: '#C47F17',
