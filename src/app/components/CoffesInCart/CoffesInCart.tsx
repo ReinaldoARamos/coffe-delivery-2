@@ -20,7 +20,7 @@ export function CoffesInCart() {
     }
   }
   return (
-    <div className="flex items-center  gap-5">
+    <div className="flex items-center pt-6 gap-5">
       <img width={64} height={64} alt="cafés" src="coffees/expresso.png" />
       <div className="flex flex-col">
         <div className="flex w-full gap-[72px]  ">
@@ -32,13 +32,13 @@ export function CoffesInCart() {
             <div className="flex items-center space-x-2 bg-base-button py-1.5 px-2.5 rounded-[6px]">
               <Minus
                 size={14}
-                className="text-brand-300 hover:cursor-pointer"
+                className="text-brand-500 hover:cursor-pointer hover:text-brand-300 transition-colors"
                 onClick={() => decreaseCounter()}
               />
               <span>{coffeeCount}</span>
               <Plus
                 size={14}
-                className="text-brand-300 hover:cursor-pointer"
+                className="text-brand-500 hover:cursor-pointer hover:text-brand-300 transition-colors"
                 onClick={() => IncreaseCounter()}
               />
             </div>
