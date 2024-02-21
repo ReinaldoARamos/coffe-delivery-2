@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
      
         <body className={inter.className}>
-          <header className="flex items-center justify-between px-40 py-8">
+          <header className="flex items-center justify-between lg:px-40 px-10 py-8">
             <CoffeeDeliveryLogo />
             <City />
           </header>
