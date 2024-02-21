@@ -26,13 +26,13 @@ export function CoffesCard() {
     }
   }
   return (
-    <div className="flex w-64 flex-col items-center justify-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-base-card px-5 pb-6 ">
+    <div className="flex w-64  flex-col items-center justify-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-base-card px-5 pb-6 ">
       <img
         src="coffees/expresso.png"
         alt=""
         width={120}
         height={120}
-        className="pb-3"
+        className="pb-3  -mt-7"
       />
       <div className="item-center flex">
         <span className="mb-5 rounded-full bg-brandyellow-light px-2 py-1 text-justify text-brandyellow-dark">

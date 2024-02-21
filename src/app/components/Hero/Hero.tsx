@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Baloo_2 } from "next/font/google";
 
 import {
@@ -29,7 +30,7 @@ export function Hero() {
             <br />a qualquer hora
           </div>
           <div
-            className="grid w-[610px] grid-cols-2 gap-5
+            className="grid lg:max-w-[610px] grid-cols-2 gap-5 
       "
           >
             <Icons
@@ -55,7 +56,7 @@ export function Hero() {
           </div>
         </div>
 
-        <CoffeeLogo />
+     <img alt="" src="images/coffeeHero.png" className="w-[476px] h-[360px] lg:block md:hidden hidden"/>
       </div>
     )
 }

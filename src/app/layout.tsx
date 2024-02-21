@@ -4,9 +4,10 @@ import "./globals.css";
 import CoffeeDeliveryLogo from "./components/Logo/Logo";
 import { City } from "./components/City/City";
 
+
 const inter = Roboto({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -21,13 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="flex justify-between items-center px-40 py-8">
-          <CoffeeDeliveryLogo />
-          <City />
-        </header>
-        {children}
-      </body>
+     
+        <body className={inter.className}>
+          <header className="flex items-center justify-between px-40 py-8">
+            <CoffeeDeliveryLogo />
+            <City />
+          </header>
+        
+          {children}
+      
+        </body>
+     
     </html>
   );
 }
