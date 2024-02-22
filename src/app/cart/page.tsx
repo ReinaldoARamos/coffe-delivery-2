@@ -9,7 +9,7 @@ const inter = Baloo_2({
   
 export default function Cart() {
     return (
-        <div className="pt-10 px-40 grid grid-cols-2 gap-x-8 ">
+        <div className="pt-10 lg:px-40 px-10 lg:grid lg:grid-cols-2 gap-x-8 flex flex-col ">
         <AdressForm />
        <CoffeeCart />
       </div>
