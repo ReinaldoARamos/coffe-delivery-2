@@ -20,7 +20,7 @@ export function CoffeeCart() {
         Complete seu pedido
       </div>
 
-      <div className="rounded-tl-[6px] rounded-tr-[44px] rounded-bl-[44px]   rounded-br-[6px]  bg-base-card p-10 max-w-[448px]">
+      <div className="rounded-tl-[6px]  rounded-tr-[44px] rounded-bl-[44px]   rounded-br-[6px]  bg-base-card p-10 max-w-[448px]">
         <div className="flex justify-center flex-col space-y-12 ">
           <CoffesInCart />
           <CoffesInCart />

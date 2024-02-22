@@ -8,7 +8,7 @@ const inter = Baloo_2({
 });
 export default function ConfirmOrder() {
   return (
-    <div className="pt-20 lg:px-40 px-10">
+    <div className="pt-20 lg:px-40 px-10 ">
       <div className="pb-10">
         <h1
           className={`${inter.className} text-brandyellow-dark text-3xl font-bold`}
