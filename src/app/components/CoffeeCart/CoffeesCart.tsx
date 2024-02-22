@@ -8,6 +8,7 @@ import {
 import { Baloo_2 } from "next/font/google";
 import { PaymentButtons } from "../PaymentButtons/PaymentButtons";
 import { CoffesInCart } from "../CoffesInCart/CoffesInCart";
+import Link from "next/link";
 
 const inter = Baloo_2({
   subsets: ["latin"],
@@ -43,9 +44,11 @@ export function CoffeeCart() {
           </div>
         </div>
 
-        <button className="mt-6 py-3 bg-brandyellow-regular hover:bg-brandyellow-dark transition-colors rounded-[6px] w-full text-base-white text-md">
+      <Link href={'/confirm-order'}>
+      <button className="mt-6 py-3 bg-brandyellow-regular hover:bg-brandyellow-dark transition-colors rounded-[6px] w-full text-base-white text-md">
           CONFIRMAR PERIDO
         </button>
+      </Link>
       </div>
     </div>
   );
