@@ -9,7 +9,26 @@ import { useState } from "react";
 const inter = Baloo_2({
   subsets: ["latin"],
 });
-export function CoffesCard() {
+
+interface COffeeProps {
+  name: string;
+  tags: [
+    {
+      name: string;
+    }
+  ];
+  description: string;
+  price: number;
+  img: string;
+}
+
+export function CoffesCard({
+  description,
+  img,
+  name,
+  price,
+  tags,
+}: COffeeProps) {
   const [coffeCount, setCoffeeCount] = useState<number>(0);
 
   function IncreaseCounter() {
@@ -25,6 +44,7 @@ export function CoffesCard() {
       setCoffeeCount(0);
     }
   }
+
   return (
     <div className="flex w-64  flex-col items-center justify-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-base-card px-5 pb-6 ">
       <img
@@ -32,16 +52,19 @@ export function CoffesCard() {
         alt=""
         width={120}
         height={120}
-        className="pb-3  -mt-7"
+        className="-mt-7  pb-3"
       />
       <div className="item-center flex">
-        <span className="mb-5 rounded-full bg-brandyellow-light px-2 py-1 text-justify text-brandyellow-dark">
-          TRADICIONAL
-        </span>
+        {tags.map((tag) => (
+          <span
+            key={tag.name}
+            className="mb-5 rounded-full bg-brandyellow-light px-2 py-1 text-justify text-brandyellow-dark"
+          >
+            {tag.name}
+          </span>
+        ))}
       </div>
-      <div className={`${inter.className} pb-2 text-xl font-bold`}>
-        Expresso tradicional
-      </div>
+      <div className={`${inter.className} pb-2 text-xl font-bold`}>{name}</div>
       <span className="pb-8 text-center text-sm text-base-label">
         O tradicional café feito com água quente e grãos moídos
       </span>
