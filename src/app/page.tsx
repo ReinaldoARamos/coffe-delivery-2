@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Hero } from "./components/Hero/Hero";
 import { Baloo_2 } from "next/font/google";
 import { CoffesCard } from "./components/CoffesAvailable/CoffesAvailable";
-
+import cafesData from './coffees.json';
 const inter = Baloo_2({
   subsets: ["latin"],
 });
@@ -32,6 +32,7 @@ export default function Home() {
         <CoffesCard />
         <CoffesCard />
       </div>
+      
     </div>
   );
 }

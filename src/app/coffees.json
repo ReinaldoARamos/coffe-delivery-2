@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Café A",
+      "description": "Um café delicioso",
+      "imageSrc": "caminho/para/imagem1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Café B",
+      "description": "Outro café incrível",
+      "imageSrc": "caminho/para/imagem2.jpg"
+    }
+
+  ]
+  
