@@ -11,7 +11,7 @@ export default function Home() {
     <div className="px-10 lg:px-40">
       <Hero />
       <h2
-        className={`${inter.className} pb-14 text-[32px] font-bold leading-[130%] text-base-subtitle`}
+        className={`${inter.className} pb-14  text-[32px] font-bold leading-[130%] text-base-subtitle`}
       >
         Nossos cafés
       </h2>
