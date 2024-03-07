@@ -44,11 +44,12 @@ export function CoffesCard({
       setCoffeeCount(0);
     }
   }
-
+  
   return (
     <div className="flex w-64  flex-col items-center justify-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-base-card px-5 pb-6 ">
       <img
-        src="coffees/expresso.png"
+      
+        src={img}
         alt=""
         width={120}
         height={120}
@@ -66,7 +67,7 @@ export function CoffesCard({
       </div>
       <div className={`${inter.className} pb-2 text-xl font-bold`}>{name}</div>
       <span className="pb-8 text-center text-sm text-base-label">
-        O tradicional café feito com água quente e grãos moídos
+      {description}
       </span>
       <div className="flex items-center gap-6 ">
         <div>

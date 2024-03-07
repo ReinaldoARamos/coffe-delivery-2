@@ -17,22 +17,22 @@ export default function Home() {
       </h2>
 
       <div className="grid grid-cols-2  gap-x-8  gap-y-10 lg:w-[1120px] lg:grid-cols-4 ">
-        <CoffesCard
-          name={"Expresso Tradicional"}
-          //@ts-ignore
-          tags={[
-            {
-              name: "Tradicional",
-            },
-            {
-              name: "Nengue",
-            },
-          ]}
-          description={"AAA"}
-          price={0}
-          img={"coffee/expresso.png"}
-        />
+      {cafesData.map((tag) => (
+ <CoffesCard
+ key={tag.id}
+ name={tag.name}
+ //@ts-ignore
+ tags={
+   tag.tags
+ }
+ description={tag.description}
+ price={tag.price}
+ img={tag.imageSrc}
+/>
+))}
+        
       </div>
+    
     </div>
   );
 }
